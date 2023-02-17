@@ -65,6 +65,7 @@ public class MyFirstUserStory2 {
 		cf.myWait(5);
 		test.log(LogStatus.INFO,test.addScreenCapture(CaptureScreen(driver))+"Application Launched Successfully" );
 		test.log(LogStatus.PASS, "1st Test Case Executed Successfully");
+		cf.myWait(10);
 	}
 	@Test
 	public void TC_02_Verify_Google_SearchSection() throws Exception
@@ -74,7 +75,7 @@ public class MyFirstUserStory2 {
 	
 		test.log(LogStatus.INFO, "Test Case Validation Started:Launch Application");
 	
-		cf.myWait(10);
+		cf.myWait(20);
 		
 		WebElement ele =driver.findElement(By.xpath("//body[1]/div[1]/div[3]/form[1]/div[1]"));
 		cf.highLighterMethod(driver, ele); //Call the highlighterMethod and pass webdriver and WebElement which you want to highlight as arguments.
